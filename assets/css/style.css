@@ -1,0 +1,78 @@
+/* Global Verivable */
+:root{
+    /* font */
+    --primary-font: Arial, Helvetica, sans-serif;
+
+    /* color */
+    --background-color: #D4D9D1;
+    --primary-color: #BAC4A7;
+    --secondary-color: #697644;
+    --tertiary-color: #233115;
+    --text-color: black;
+
+    /* helper */
+    --border-radius: 25px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    height: 100vh;
+}
+
+/* header */
+header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header h1 {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 36px;
+    flex-grow: 1;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+    
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
+
+/* header logo */
+.title img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
