@@ -76,3 +76,33 @@ header nav ul li {
     height: 50px;
     display: inline;
 }
+
+/* about us , contact */
+.hello-art {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+}
+.car-body h2 {
+    margin-bottom: 10px;
+}
+.car-body ul li a  {
+    line-height: 2rem;
+}
+.car-body {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+@media screen and (max-width: 768px){
+    .hello-art {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* about us , contact */
