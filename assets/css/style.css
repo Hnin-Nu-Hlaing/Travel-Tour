@@ -70,39 +70,15 @@ header nav ul li {
     font-size: 22px;
   }
 
+  header a:hover {
+    color: var(--tertiary-color);
+    font-weight: bold;
+    border-bottom: var(--tertiary-color) solid 2px;
+  }
+
 /* header logo */
 .title img {
     width: 50px;
     height: 50px;
     display: inline;
 }
-
-/* Footer & Footer media screen Start. */
-footer {
-    background: var(--tertiary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
-footer h2 {
-    color: beige;
-    font-size: 20px;
-    margin: 0;
-}
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-footer a {
-    color: beige; 
-}
-@media screen and (max-width: 980px) {
-    footer a{
-        text-align: center;
-        width: 100%;
-      }
-}
-/* Footer & Footer media screen end */
