@@ -70,49 +70,36 @@ header nav ul li {
     font-size: 22px;
   }
 
-  header a:hover {
-    color: var(--tertiary-color);
-    font-weight: bold;
-    border-bottom: var(--tertiary-color) solid 2px;
-  }
-
 /* header logo */
 .title img {
     width: 50px;
     height: 50px;
     display: inline;
 }
-
-/* hero/jumbotron */
-.hero {
-    background-image: url(../images/image.png);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.hello-art {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
 }
-
-.hero-title {
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 12rem;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+.car-body h2 {
+    margin-bottom: 10px;
 }
-
-.hero-title button {
-    border:solid 2px var(--primary-color);
-    padding: 15px;
-    border-radius: 15px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: large;
-    font-weight: bold;
+.car-body ul li a  {
+    line-height: 2rem;
 }
-
-.hero-title button:hover {
-    color: var(--secondary-color);
-    background-color: var(--tertiary-color);
+.car-body {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+@media screen and (max-width: 768px){
+    .hello-art {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
