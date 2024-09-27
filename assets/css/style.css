@@ -9,10 +9,11 @@
     --secondary-color: #697644;
     --tertiary-color: #233115;
     --text-color: black;
+    --about-color: #2D6A4F;
 
     /* helper */
     --border-radius: 25px;
-    --btn-border-radius: 15px;
+    --btn-border-radius: 10px;
 }
 
 
@@ -23,7 +24,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     font-family: var(--primary-font);
     height: 100vh;
@@ -80,7 +81,7 @@ header nav ul li {
 
 /* hero/jumbotron */
 .hero {
-    background-image: url(../images/image.png);
+    background-image: url(../images/hero.jpeg);
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -111,9 +112,65 @@ header nav ul li {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
 }
+/* Favorite */
+.favorite {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+.favorite-title {
+    padding: 25px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.favorite-title h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    
+}
+.tour-places {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+.place {
+    /* flex: 2 1 18%; */
+    margin: 25px;
+    /* text-align: center; */
+}
+.place img {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.place p {
+    margin: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
 
 
 /* package */
+.package {
+    background-color: var(--primary-color);
+}
+.package-title h2{
+    text-align: center;
+    /* margin-top: 25px; */
+    font-size: 1.6rem;
+    color: var(--tertiary-color);
+}
+.package-title p{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
 .card-container{
     max-width: 1200px;
     width: 100%;
@@ -142,6 +199,7 @@ header nav ul li {
     display: flex;
     flex-direction: column;
     color: var(--primary-color);
+    background-color: var(--tertiary-color);
     
 }
 
@@ -170,10 +228,13 @@ header nav ul li {
 }
 
 .card-header{
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 550;
-    text-align: center;
+    /* text-align: center; */
+    font-weight: bold;
+    margin-left: 20px;
+    margin: 20px;
 }
 
 .card-menu{
@@ -182,24 +243,26 @@ header nav ul li {
     margin-left: 30px;
     line-height: 1.5;
     font-size: 20px;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .card-btn{
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 25px;
     margin-bottom: 10px;
     float: inline-end;
-    font-size: x-large;
-    color: whitesmoke;
-    padding: 0.3rem;
+    border:solid 2px var(--primary-color);
+    padding: 15px;
+    border-radius: 15px;
     background-color: var(--secondary-color);
-    border-radius: var(--btn-border-radius);
+    color: var(--primary-color);
+    font-size: large;
+    font-weight: bold;
 }
 
 .card-btn:hover{
-    color: darkmagenta;
-    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 
@@ -232,9 +295,15 @@ header nav ul li {
 }
 .car-body h2 {
     margin-bottom: 10px;
+    color: var(--tertiary-color);
 }
 .car-body ul li a  {
     line-height: 2rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.car-body ul li{
+    list-style: none;
 }
 .car-body {
     padding: 2rem;
@@ -242,7 +311,7 @@ header nav ul li {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--about-color);
 }
 footer {
     background: #233115;
@@ -265,6 +334,11 @@ footer div {
 footer a {
     color: beige; 
 }
+.fa-solid {
+    color: var(--tertiary-color);
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 980px) {
     footer a{
         text-align: center;
@@ -275,5 +349,17 @@ footer a {
     .hello-art {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+/* Favorite */
+
+
+@media (max-width: 768px) {
+    .tour-places {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place {
+        flex: 1 1 80%;
     }
 }
