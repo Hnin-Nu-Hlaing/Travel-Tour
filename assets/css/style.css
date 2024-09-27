@@ -244,6 +244,33 @@ header nav ul li {
     height: 100%;
     background-color: var(--primary-color);
 }
+footer {
+    background: #233115;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer h2 {
+    color: beige;
+    font-size: 20px;
+    margin: 0;
+}
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: beige; 
+}
+@media screen and (max-width: 980px) {
+    footer a{
+        text-align: center;
+        width: 100%;
+      }
+}
 @media screen and (max-width: 768px){
     .hello-art {
         display: flex;
