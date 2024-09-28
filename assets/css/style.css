@@ -120,7 +120,7 @@ header nav ul li {
 .favorite-title {
     padding: 25px;
     font-weight: bold;
-    color: var(--secondary-color); 
+    color: var(--tertiary-color); 
 }
 .favorite-title h3 {
     font-size: 2rem;
@@ -300,9 +300,11 @@ header nav ul li {
 .address h2 {
     margin-top: 10px;
     color: var(--primary-color);
+    padding: 10px;
 }
 .address p {
     line-height: 1.7rem;
+    color: var(--primary-color);
 }
 .contact ul li a  {
     line-height: 2rem;
@@ -312,14 +314,6 @@ header nav ul li {
 .contact ul li{
     list-style: none;
 }
-/* .car-body {
-    padding: 2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--secondary-color);
-} */
 
 .fa-solid {
     color: var(--primary-color);
@@ -395,15 +389,6 @@ footer span {
         font-size: 1rem;
     }
 }
-
-
-/* contact */
-/* @media screen and (max-width: 768px){
-    .hello-art {
-        display: flex;
-        flex-wrap: wrap;
-    }
-} */
 
 /* Favorite */
 @media (max-width: 768px) {
