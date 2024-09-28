@@ -415,3 +415,62 @@ footer span {
         flex: 1 1 80%;
     }
 }
+
+/* package */
+@media (min-width: 700px) {
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-img {
+        height: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-img {
+        height: 300px;
+    }
+}
+/* Tablet View (for screens between 768px and 1024px) */
+@media only screen and (max-width: 1024px) {
+    /* header */
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        align-items: center;
+    }
+    
+    /* hero */
+    .hero {
+        height: 400px;
+    }
+    .hero-title {
+        font-size: 20px;
+        padding: 8rem;
+    }
+    .hero-title button {
+        padding: 10px;
+        font-size: medium;
+    }
+}
+/* Mobile View (for screens below 768px) */
+@media only screen and (max-width: 768px) {
+    /* header */
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    /* hero */
+    .hero-title {
+        font-size: 17px;
+        padding: 6rem;
+    }
+}
