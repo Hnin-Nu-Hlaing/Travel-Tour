@@ -115,13 +115,16 @@ header nav ul li {
 /* Favorite */
 .favorite {
     text-align: center;
+    border-bottom: 3px solid;
+    padding: 1.5rem;
     /* background-color: var(--primary-color); */
 }
-.favorite-title {
+.favorite-title{
     padding: 25px;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--tertiary-color); 
 }
+
 .favorite-title h3 {
     font-size: 2rem;
     margin-top: 20px;
@@ -139,35 +142,43 @@ header nav ul li {
     /* text-align: center; */
 }
 .place img {
-    width: 200px;
-    height: 230px;
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+.place h4 {
+    font-size: 1.3rem;
+}
+
 .place p {
     margin: 5px;
     font-size: 1.1rem;
     font-weight: bold;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 5px;
+    /* border: 1px solid var(--tertiary-color); */
+    /* border-radius: 5px; */
     color: var(--tertiary-color);
 }
 
+.place .fa-solid {
+ color: var(--tertiary-color);
+}
 
 /* package */
-/* .package {
-    background-color: var(--primary-color);
-} */
+.package {
+    /* background-color: var(--primary-color); */
+    padding-top: 30px;
+}
 .package-title h2{
     text-align: center;
     /* margin-top: 25px; */
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--tertiary-color);
 }
 .package-title p{
     text-align: center;
     margin-top: 25px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--tertiary-color);
     font-weight: bold;
 }
