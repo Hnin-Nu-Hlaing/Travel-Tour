@@ -171,7 +171,9 @@ header nav ul li {
     color: var(--tertiary-color);
     font-weight: bold;
 }
-.card-container{
+.card-container
+
+    {
     max-width: 1200px;
     width: 100%;
     display: grid;
@@ -286,32 +288,37 @@ header nav ul li {
 /* package end */
 
 /* AboutUs/Contact */
-.hello-art {
+
+.address-container {
+    background-color: var(--secondary-color);
     display: grid;
     width: 100%;
-    margin: 20px auto;
-    height: 150px;
     grid-template-columns: 1fr 1fr;
-}
-.car-body h2, p {
     margin-bottom: 10px;
+}
+
+.address{
+    padding: 25px;
+}
+
+.address h2{
+    margin-bottom: 20px;
     color: var(--primary-color);
 }
-.car-body ul li a  {
+
+.address p{
+    color: var(--primary-color);
+    line-height: 1.5rem;
+}
+
+
+.address ul li a  {
     line-height: 2rem;
     color: var(--primary-color);
     text-decoration: none;
 }
-.car-body ul li{
+.address ul li{
     list-style: none;
-}
-.car-body {
-    padding: 2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--secondary-color);
 }
 
 .fa-solid {
@@ -391,11 +398,11 @@ footer span {
 
 
 /* contact */
-@media screen and (max-width: 768px){
-    .hello-art {
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 468px){
+    /* .address-container 
+    .fa-solid .fa-map-location-dot{
+        margin: 0;
+    } */
 }
 
 /* Favorite */
