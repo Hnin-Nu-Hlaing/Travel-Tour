@@ -74,9 +74,8 @@ header nav ul li {
     font-size: 22px;
   }
 
-  header nav ul li a:hover {
+  header a:hover {
     color: var(--tertiary-color);
-    font-size: 22px; 
 }
 
 /* header logo */
@@ -96,7 +95,7 @@ header nav ul li {
     background-color: #F4F4F4;
     margin: 10px 0;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     font-size: 20px;
     transition: transform 0.3s ease-in-out;
 

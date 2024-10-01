@@ -1,0 +1,45 @@
+.page-title-container {
+    text-align: center;
+}
+
+.page-title {
+    color: #233115;
+    display: inline-block;
+    border-bottom: 4px solid #233115;
+    padding: 0 80px 15px 80px;
+    font-weight: bold;
+    font-size: 42px;
+    /* text-align: center; */
+    /* font-style: italic; */
+  }
+
+  .page-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #233115;
+  }
+  
+  .page-content h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  .page-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+
+  .page-content ul {
+    margin: 15px 20px;
+  }
+
+  .page-content li {
+    color: #233115;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+.page-content span {
+  font-weight: bold;
+}

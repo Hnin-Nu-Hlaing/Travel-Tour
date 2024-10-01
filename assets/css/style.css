@@ -5,7 +5,7 @@
 
     /* color */
     --background-color: #b6cca9;
-    --primary-color: #d1d8c5;
+    --primary-color: #ebeee5;
     --secondary-color: #697644;
     --tertiary-color: #233115;
     --text-color: black;
@@ -71,10 +71,10 @@ header nav ul li {
     font-weight: lighter;
     font-size: 22px;
   }
-
-  header nav ul li a:hover {
+  
+  header a:hover {
     color: var(--tertiary-color);
-    font-size: 22px; 
+    /* font-size: 22px;  */
 }
 
 /* header logo */
