@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+#container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(40, 165, 148, 0.623);
+    width: 400px;
+
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.back-button {
+    background-color: #f44336;
+}
+.back-button:hover {
+    background-color: #d32f2f;
+}
+#confirmationDetails {
+    display: none;
+}
+
+h2,
+#totalCost{
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-label{
+    font-weight: bold;
+}

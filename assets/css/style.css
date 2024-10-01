@@ -66,13 +66,13 @@ header nav ul li {
     display: inline;
   }
   
-  header nav ul li a {
+header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
   }
 
-  header nav ul li a:hover {
+header nav ul li a:hover {
     color: var(--tertiary-color);
     font-size: 22px; 
 }
@@ -84,6 +84,63 @@ header nav ul li {
     display: inline;
 }
 
+/* sign up */
+
+.hidden {
+    display: none;    
+
+}
+
+#logout-btn{
+    font-size: 1.2rem;
+    border-radius: 5px solid rgb(145, 134, 134);
+    background-color: #2D6A4F;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+        background-color: aliceblue;
+        color: #233115;
+    }
+}
+
+#signUpBtn{
+    font-size: 1.2rem;
+    border-radius: 5px solid rgb(145, 134, 134);
+    background-color: #2D6A4F;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+        background-color: aliceblue;
+        color: #233115;
+    }
+}
+.form-container {
+    position: absolute;
+    top: 70px; /* Adjust to be below the header */
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 250px; /* Set a fixed width */
+}
+.form-container h2 {
+    margin-bottom: 10px;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 /* hero/jumbotron */
 .hero {
     background-image: url(../images/hero.jpeg);
@@ -91,6 +148,10 @@ header nav ul li {
     background-size: cover;
     background-position: center;
     position: relative;
+    /* add */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-title {
@@ -102,8 +163,8 @@ header nav ul li {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-
-.hero-title button {
+/* booking btn */
+.hero-title a {
     border:solid 2px var(--primary-color);
     padding: 15px;
     border-radius: 15px;
@@ -111,11 +172,15 @@ header nav ul li {
     color: var(--primary-color);
     font-size: large;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.hero-title button:hover {
+.hero-title a:hover {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
+}
+.hero-title .booking-btn {
+    margin-top: 30px;
 }
 /* Favorite */
 .favorite {
@@ -265,7 +330,6 @@ header nav ul li {
 .card-btn{
     text-decoration: none;
     margin-right: 25px;
-    margin-bottom: 10px;
     float: inline-end;
     border:solid 2px var(--primary-color);
     padding: 15px;
@@ -274,6 +338,8 @@ header nav ul li {
     color: var(--primary-color);
     font-size: large;
     font-weight: bold;
+    margin-bottom: 5px;
+
 }
 
 .card-btn:hover{
@@ -307,21 +373,35 @@ header nav ul li {
     width: 100%;
     margin: 20px auto;
     background-color: var(--about-color);
-    /* height: 150px; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    /* display: flex; */
 }
 .address {
     padding: 20px;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    justify-content: center;  */
+
 }
 .address h2 {
     margin-top: 10px;
     color: var(--primary-color);
     padding: 10px;
+    /* -webkit-text-stroke-width: 50%; */
+    /* -webkit-text-stroke-color: #193bd6; */
 }
 .address p {
     line-height: 1.7rem;
     color: var(--primary-color);
 }
+
+.contact{
+    border-left: 4px solid #333;
+    border-top-left-radius: 50px;
+    padding: 14px;
+}
+
 .contact ul li a  {
     line-height: 2rem;
     color: var(--primary-color);
@@ -425,6 +505,16 @@ footer span {
     .card-img {
         height: 200px;
     }
+
+    /* .address {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 2;
+        justify-content: center;
+    
+    } */
+
+    
 }
 @media (min-width: 1200px) {
     .card-container{
@@ -453,7 +543,7 @@ footer span {
         padding: 8rem;
     }
     .hero-title button {
-        padding: 10px;
+        /* padding: 10px; */
         font-size: medium;
     }
 }

@@ -34,13 +34,34 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-
                 <li>
-                    <a href="#">Sign In</a>
+                    <button id="signUpBtn">Sign Up</button>
+                </li>
+                <li id="logOutBtn" class="hidden">
+                    <button id="logout-btn" onclick="logOut()">Log Out</button>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Sign Up Form -->
+    <div id="signUpForm" class="form-container hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="signUp()">OK</button>
+        <button onclick="closeForm()">Cancel</button>
+    </div>
+
+    <!-- Sign In Form -->
+    <div id="signInForm" class="form-container hidden">
+        <h2>Sign In</h2>
+        <input type="email" id="signInEmail" placeholder="Email" value="">
+        <input type="password" id="signInPassword" placeholder="Password" value="">
+        <button onclick="signIn()">OK</button>
+        <button onclick="closeForm()">Cancel</button>
+    </div>
 
     <!-- hero/jumbotron -->
     <section class="hero">
@@ -50,9 +71,12 @@
             </h2>
             <p>Just Travel!</p>
             <h3>Sign Up Today and Start exploring the world like never before!</h2>
-            <button type="submit">Book Now</button>
-        </div>
+            <button class="booking-btn">            
+                <a href="./pages/booking.html">Book Now</a>
+            </button>  
+            </div>
     </section>
+
     <!-- Favortie -->
     <section class="favorite">
         <div class="favorite-title">
@@ -192,7 +216,7 @@
                     <div card-list>
                         <h2 class="card-header">The Golden Rock</h2>
                         <ul class="card-menu">
-                            <li>Bilu lsland-Zawegabin-BayinNyiCave-Kyaik  Htee Yoe</li>
+                            <li>BiluIsland-Zawegabin-BayinNyiCave-KyaikHteeYoe</li>
                             <li>5 Days</li>
                             <li>500000 mmk</li>
                         </ul>
