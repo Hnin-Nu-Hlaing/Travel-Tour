@@ -266,3 +266,27 @@ header nav ul li {
       font-size: 1rem;
   }
 }
+@media (max-width: 600px) {
+  .content-item {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: flex-start; /* Align to the start */
+  }
+  .content-item img {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 10px; /* Add margin below image */
+  }}
+
+  @media screen and (min-width: 387px) {
+    .content-item img {
+      width: 300px; /* Use 80% of the container width */
+      margin: 2px auto; /* Center align the images */
+    }
+  }
+  /* Styles for mobile devices */
+  @media screen and (max-width: 538px) {
+    .content-item img {
+      width: 300px; /* Full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
+  }

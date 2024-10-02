@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="/assets/css/booking.css">
+</head>
+<body>
+    
+    <div id="container">
+        
+        <marquee behavior="" direction="">
+            <strong style="color: hsl(7, 84%, 39%);">
+                Sign up today and enjoy a 10% discount on your next booking after every 4th booking with us!
+            </strong>
+        </marquee>
+
+        <!-- Booking Form -->
+        <div id="bookingForm">
+            <h2>Travel Booking</h2>
+            <form onsubmit="showDetails(event)">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" name="username" class="form-input" placeholder="username" required>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email Address" required>
+                <label for="package" class="form-label">Choose your destination:</label>
+                <select id="package" name="package" onchange="calculateCost()" required>
+                    <option value="">--Select a package--</option>
+                    <option value="Bagan & Mt.Poppa">Bagan & Mt.Poppa</option>
+                    <option value="Shan-State">Shan-State</option>
+                    <option value="PyinooLwin-Trip">PyinooLwin-Trip</option>
+                    <option value="Highlights of Myanmar">Highlights of Myanmar</option>
+                    <option value="The Golden Rock">The Golden Rock</option>
+                    <option value="Dawei-Myeik">Dawei-Myeik</option>
+                </select>
+                <label for="numPeople" class="form-label">Number of people:</label>
+                <input type="number" id="numPeople" name="numPeople" value="1" min="1" onchange="calculateCost()" required>
+                <p id="totalCost">Total Cost: $0</p>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+        <!-- Confirmation Details -->
+        <div id="confirmationDetails"></div>
+    </div>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
