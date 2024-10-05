@@ -70,6 +70,16 @@ if (userData.email) {
 
 document.getElementById("signUpBtn").onclick = openSignUpForm;
 
+// Set minimum date to tomorrow (exclude today)
+var today = new Date();
+var tomorrow = new Date(today);
+tomorrow.setDate(tomorrow.getDate() + 1);  // Add one day to today to get tomorrow's date
+var dd = String(tomorrow.getDate()).padStart(2, '0');
+var mm = String(tomorrow.getMonth() + 1).padStart(2, '0'); // January is 0!
+var yyyy = tomorrow.getFullYear();
+var minDate = yyyy + '-' + mm + '-' + dd;
+document.getElementById("bookingDate").setAttribute("min", minDate);
+
 // calculateCost
 
 function calculateCost() {
@@ -97,6 +107,7 @@ function showDetails(event) {
     var email = document.getElementById("email").value;
     var package = document.getElementById("package").value;
     var numPeople = document.getElementById("numPeople").value;
+    var bookingDate = document.getElementById("bookingDate").value;
     var costPerPerson;
 
     switch (package) {
@@ -128,6 +139,7 @@ function showDetails(event) {
         <p><strong>Username:</strong> ${username}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Destination:</strong> ${package}</p>
+        <p><strong>Booking Date:</strong> ${bookingDate}</p>
         <p><strong>Number of people:</strong> ${numPeople}</p>
         <p><strong>Cost per person:</strong> $${costPerPerson}</p>
         <p><strong>Total Cost:</strong> $${totalCost.toFixed(2)}</p>
