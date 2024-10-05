@@ -226,8 +226,9 @@ footer span {
     height: 300px;
   } */
 
+  
   .text-content p {
-    line-height: 0.5rem;
+    line-height: 1.5rem;
   }
 
 }
@@ -241,6 +242,11 @@ footer span {
     margin-right: 0; /* Remove margin on smaller screens */
     margin-bottom: 10px; /* Add margin below image */
   }
+
+  .text-content p {
+    line-height: 1.5rem;
+  }
+
 }
 
 /* footer */
