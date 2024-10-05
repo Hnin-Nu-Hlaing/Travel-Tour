@@ -34,6 +34,8 @@
                     <option value="The Golden Rock">The Golden Rock</option>
                     <option value="Dawei-Myeik">Dawei-Myeik</option>
                 </select>
+                <label for="bookingDate" class="form-label">Booking Date:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
                 <label for="numPeople" class="form-label">Number of people:</label>
                 <input type="number" id="numPeople" name="numPeople" value="1" min="1" onchange="calculateCost()" required>
                 <p id="totalCost">Total Cost: $0</p>
