@@ -110,7 +110,7 @@ header a:hover {
 .mySlides {
   display: none; /* Hide all images initially */
   width: 300px; /* Make images responsive to the container */
-  height: 250px; /* Maintain fixed height */
+  height: 300px; /* Maintain fixed height */
   object-fit: cover; /* Scale image to cover the container */
   border-radius: 5%;
 }
@@ -123,7 +123,7 @@ header a:hover {
 
 .text-content p {
   margin: 10px 0;  /* အပေါင်းအထက် နေရာ ခွင့်ချင် */
-  line-height: 2.2; /* စာသား အကြားအနက်ကို မြှင့်တင် */
+  line-height: 3rem; /*စာသား အကြားအနက်ကို မြှင့်တင်*/
 }
 
 .text-content h2 {
@@ -162,13 +162,10 @@ header a:hover {
 /* footer */
 footer {
   background: var(--secondary-color);
-  /* width: 100%; */
   padding: 15px 35px;  
-  /* display: flex; */
   text-align: center;
   align-items: center; 
   justify-content: space-between;
-  /* flex-wrap: nowrap;  */
 }
 
 footer h2 {
@@ -179,7 +176,6 @@ footer h2 {
 
 footer div {
   line-height: 1;
-  /* text-align: right; */
 }
 
 footer a {
@@ -192,6 +188,12 @@ footer span {
   color: var(--tertiary-color);
 }
 
+@media only screen and (max-width: 1250px) {
+  .text-content p {
+    line-height: 2.5rem;
+  }
+}
+
 /* Tablet View (for screens between 820px and 1024px) */
 @media only screen and (max-width: 1024px) {
   /* header */
@@ -200,6 +202,11 @@ footer span {
   }
   header nav ul {
       align-items: center;
+  }
+
+
+  .text-content p {
+    line-height: 1.5rem;
   }
 }
 /* Mobile View (for screens below 820px) */
@@ -214,6 +221,15 @@ footer span {
   header nav ul li a {
       font-size: 18px;
   }
+
+  /* .mySlides {
+    height: 300px;
+  } */
+
+  .text-content p {
+    line-height: 0.5rem;
+  }
+
 }
 
 @media (max-width: 600px) {
