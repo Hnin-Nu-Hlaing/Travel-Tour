@@ -549,4 +549,8 @@ footer span {
         font-size: 17px;
         padding: 6rem;
     }
+    .hero-title button {
+        /* padding: 5px; */
+        font-size: small;
+    }
 }

@@ -2,7 +2,9 @@
 const contentItems = document.querySelectorAll('.content-item');
 const scrollTopBtn = document.querySelector('.scroll-top-btn');
 const headerHeight = document.querySelector('.sticky-header').offsetHeight;
-// Scroll Event Listener
+
+
+// Scroll Event Listener  
 window.addEventListener('scroll', function() {
   let scrollY = window.scrollY;
   // scroll ဖြစ်တဲ့အချိန် header ကိုပြောင်းပြီး အောက်က content-item များကို header အထဲထဲကို ထိုးတက်စေ
@@ -15,6 +17,8 @@ window.addEventListener('scroll', function() {
       item.style.transform = 'translateY(0px)';
     }
   });
+
+
   // scroll-to-top button ကိုပြခြင်း
   if (scrollY > 300) {
     scrollTopBtn.style.display = 'block';
@@ -22,14 +26,11 @@ window.addEventListener('scroll', function() {
     scrollTopBtn.style.display = 'none';
   }
 });
-// Scroll to Top function
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
+
+
 let slideIndex = 0; // Initialize slide index
+
+
 
 // Function to show slides
 function showSlides() {
@@ -54,6 +55,7 @@ function showSlides() {
 // Start the slideshow
 showSlides();
 
+
 // Scroll to top function
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
@@ -74,3 +76,4 @@ function showSlides() {
 
 showSlides(); // Start the slideshow
 });
+
