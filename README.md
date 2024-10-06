@@ -29,7 +29,7 @@
 
  - comments
  - used vanilla js
-
+ - jQuery
  #### APP Creteria
 
  - local Storage

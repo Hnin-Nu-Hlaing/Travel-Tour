@@ -54,3 +54,11 @@ h2,
 .form-label{
     font-weight: bold;
 }
+
+.edit-button {
+    background-color: rgb(33, 33, 214);
+    
+    &:hover {
+        background-color: blue;
+    }
+}

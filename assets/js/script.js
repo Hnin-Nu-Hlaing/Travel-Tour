@@ -1,6 +1,9 @@
 let userData = JSON.parse(localStorage.getItem("userData")) || {};
 let bookingCount = parseInt(localStorage.getItem("bookingCount")) || 0; // Booking count ကို localStorage မှ ရယူခြင်း
 
+function cancelBooking() {
+    window.history.back(); // နောက်ဆုံးသုံးသော HTML ပုံစံသို့ ပြန်သွားခြင်း
+}
 
 //sign up & sign in & log out
 function signUp() {
@@ -144,12 +147,17 @@ function showDetails(event) {
         <p><strong>Cost per person:</strong> $${costPerPerson}</p>
         <p><strong>Total Cost:</strong> $${totalCost.toFixed(2)}</p>
         <p><strong style="color: darkblue;">Thank you for your order! Your purchase has been successfully confirmed!</strong></p>
-        <button class="back-button" onclick="goBack()">Ok!</button>
+        <button class="ok-button" onclick="confirmBooking()">OK</button>
+        <button class="edit-button" onclick="editBooking()">Edit</button>
     `;
 }
 
-function goBack() {
-    document.getElementById("bookingForm").style.display = "block"; // Booking form ကို ပြန်ဖျက်မိ
-    document.getElementById("confirmationDetails").style.display = "none"; // Confirmation details ကို ဖျက်ရန်
-    window.history.back();
+function editBooking() {
+    document.getElementById("bookingForm").style.display = "block";
+    document.getElementById("confirmationDetails").style.display = "none";
+}
+// OK Button Action
+function confirmBooking() {
+    alert("Your booking has been confirmed!"); // alert ပြ
+    window.history.back(); // နောက်ဆုံးလာရောက်ခဲ့သော HTML ဖိုင်သို့ ပြန်သွား
 }
