@@ -88,17 +88,17 @@ function calculateCost() {
     var costPerPerson;
 
     switch (package) {
-        case "Bagan & Mt.Poppa": costPerPerson = 150; break;
-        case "Shan-State": costPerPerson = 200; break;
-        case "PyinooLwin-Trip": costPerPerson = 250; break;
-        case "Highlights of Myanmar": costPerPerson = 180; break;
-        case "The Golden Rock": costPerPerson = 170; break;
-        case "Dawei-Myeik": costPerPerson = 220; break;
+        case "Bagan & Mt.Poppa": costPerPerson = 700000; break;
+        case "Shan-State": costPerPerson = 800000; break;
+        case "PyinooLwin-Trip": costPerPerson = 600000; break;
+        case "Highlights of Myanmar": costPerPerson = 1500000; break;
+        case "The Golden Rock": costPerPerson = 700000; break;
+        case "Dawei-Myeik": costPerPerson = 800000; break;
         default: costPerPerson = 0;
     }
 
     var totalCost = costPerPerson * numPeople;
-    document.getElementById("totalCost").innerText = "Total Cost: $" + totalCost;
+    document.getElementById("totalCost").innerText = "Total Cost: " + totalCost + "MMK";
 }
 
 function showDetails(event) {
@@ -111,12 +111,12 @@ function showDetails(event) {
     var costPerPerson;
 
     switch (package) {
-        case "Bagan & Mt.Poppa": costPerPerson = 150; break;
-        case "Shan-State": costPerPerson = 200; break;
-        case "PyinooLwin-Trip": costPerPerson = 250; break;
-        case "Highlights of Myanmar": costPerPerson = 180; break;
-        case "The Golden Rock": costPerPerson = 170; break;
-        case "Dawei-Myeik": costPerPerson = 220; break;
+        case "Bagan & Mt.Poppa": costPerPerson = 700000; break;
+        case "Shan-State": costPerPerson = 800000; break;
+        case "PyinooLwin-Trip": costPerPerson = 600000; break;
+        case "Highlights of Myanmar": costPerPerson = 1500000; break;
+        case "The Golden Rock": costPerPerson = 700000; break;
+        case "Dawei-Myeik": costPerPerson = 800000; break;
         default: costPerPerson = 0;
     }
 

@@ -26,7 +26,6 @@ body {
   color: var(--text-color);
   font-family: var(--primary-font);
   margin: 0;
-  /* height: 100vh; */
 }
   
 /* Header ကို sticky အနေဖြင့် သတ်မှတ် */
@@ -106,7 +105,7 @@ header a:hover {
   margin-bottom: 20px; 
 
 }
-
+/* detail img */
 .mySlides {
   display: none; /* Hide all images initially */
   width: 300px; /* Make images responsive to the container */
@@ -188,6 +187,7 @@ footer span {
   color: var(--tertiary-color);
 }
 
+/* detail */
 @media only screen and (max-width: 1250px) {
   .text-content p {
     line-height: 2.5rem;
@@ -204,7 +204,7 @@ footer span {
       align-items: center;
   }
 
-
+/* detail */
   .text-content p {
     line-height: 1.5rem;
   }
@@ -222,15 +222,10 @@ footer span {
       font-size: 18px;
   }
 
-  /* .mySlides {
-    height: 300px;
-  } */
-
-  
+  /* detail */
   .text-content p {
     line-height: 1.5rem;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -243,6 +238,7 @@ footer span {
     margin-bottom: 10px; /* Add margin below image */
   }
 
+  /* detail */
   .text-content p {
     line-height: 1.5rem;
   }

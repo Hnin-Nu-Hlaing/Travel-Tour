@@ -183,7 +183,6 @@ header nav ul li {
     text-align: center;
     border-bottom: 3px solid;
     padding: 1.5rem;
-    /* background-color: var(--primary-color); */
 }
 .favorite-title{
     padding: 25px;
@@ -203,9 +202,7 @@ header nav ul li {
 
 }
 .place {
-    /* flex: 2 1 18%; */
     margin: 25px;
-    /* text-align: center; */
 }
 .place img {
     width: 300px;
@@ -221,8 +218,6 @@ header nav ul li {
     margin: 5px;
     font-size: 1.1rem;
     font-weight: bold;
-    /* border: 1px solid var(--tertiary-color); */
-    /* border-radius: 5px; */
     color: var(--tertiary-color);
 }
 
@@ -232,12 +227,10 @@ header nav ul li {
 
 /* package */
 .package {
-    /* background-color: var(--primary-color); */
     padding-top: 30px;
 }
 .package-title h2{
     text-align: center;
-    /* margin-top: 25px; */
     font-size: 2rem;
     color: var(--tertiary-color);
 }
@@ -261,14 +254,6 @@ header nav ul li {
 .card{
     box-shadow: 0px 2px 4px #333;
     border-radius: var(--card-border-radius);
-    /* transition: all 0.3s ease-out; */
-    /* background-color: #e7e1d9; */
-    
-
-    /* &:hover {
-        box-shadow: 3px 6px 30px #b1a4a4;
-        transform: translateY(-5px);
-      } */
 }
 
 .card-body{
@@ -292,7 +277,6 @@ header nav ul li {
     transition: transform 0.5s ease;
     
     &:hover {
-        /* box-shadow: 3px 6px 30px #b1a4a4; */
         transform: scale(1.2);
       } 
 }
@@ -308,14 +292,12 @@ header nav ul li {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 550;
-    /* text-align: center; */
     font-weight: bold;
     margin-left: 20px;
     margin: 20px;
 }
 
 .card-menu{
-    /* flex-grow: 1; */
     margin-bottom: 1.2rem;
     margin-left: 30px;
     line-height: 1.5;
@@ -369,22 +351,14 @@ header nav ul li {
     margin: 20px auto;
     background-color: var(--about-color);
     grid-template-columns: 2fr 1fr;
-    /* display: flex; */
 }
 .address {
     padding: 20px;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex: 2;
-    justify-content: center;  */
-
 }
 .address h2 {
     margin-top: 10px;
     color: var(--primary-color);
     padding: 10px;
-    /* -webkit-text-stroke-width: 50%; */
-    /* -webkit-text-stroke-color: #193bd6; */
 }
 .address p {
     line-height: 1.7rem;
@@ -528,7 +502,6 @@ footer span {
         padding: 8rem;
     }
     .hero-title button {
-        /* padding: 10px; */
         font-size: medium;
     }
 }
