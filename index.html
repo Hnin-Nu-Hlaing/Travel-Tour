@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Travel</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     
@@ -16,52 +16,31 @@
         </div>
         <h1>
             <a href="./index.html">
-                Just <span>Travel</span>
+                Just Travel
             </a>
         </h1>
         <!-- navigation -->
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
-                <li class="dropdown">
-                    <a href="#packages">Packages </a>
+                <li>
+                    <a href="#packages">Packages</a>
                 </li>
                 <li>
                     <a href="#AboutUs">About Us</a>
                 </li>
                 <li>
-                    <a href="#Contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
 
-                <li></li>
-                    <button id="signUpBtn">Sign Up</button>
-                </li>
-                <li id="logOutBtn" class="hidden">
-                    <button id="logout-btn" onclick="logOut()">Log Out</button>
+                <li>
+                    <a href="#">Book Now</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- Sign Up Form -->
-    <div id="signUpForm" class="form-container hidden">
-        <h2>Sign Up</h2>
-        <input type="text" id="username" placeholder="Username">
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="signUp()">OK</button>
-        <button onclick="closeForm()">Cancel</button>
-    </div>
-
-    <!-- Sign In Form -->
-    <div id="signInForm" class="form-container hidden">
-        <h2>Sign In</h2>
-        <input type="email" id="signInEmail" placeholder="Email" value="">
-        <input type="password" id="signInPassword" placeholder="Password" value="">
-        <button onclick="signIn()">OK</button>
-        <button onclick="closeForm()">Cancel</button>
-    </div>
 
     <!-- hero/jumbotron -->
     <section class="hero">
@@ -71,9 +50,7 @@
             </h2>
             <p>Just Travel!</p>
             <h3>Sign Up Today and Start exploring the world like never before!</h2>
-            <button class="booking-btn">            
-                <a href="./pages/booking.html">Book Now</a>
-            </button> 
+            <button type="submit">Sign Up</button>
         </div>
     </section>
     <!-- Favortie -->
@@ -113,7 +90,7 @@
     </section>
 
     <!-- Package -->
-     <section class="package" id="packages">
+     <section class="package">
         <div class="package-title">
             <h2>BEST OFFERS PACKAGES</h2>
             <P>Check Out Our Tours </P>
@@ -205,7 +182,7 @@
                     </div>
                 </div>
             </article>
-
+            <!-- ZaweGaBin-KyaikHteeYoe -->
             <article class="card" id="card-5">
                 <div class="card-body">
                     <div class="img-container">
@@ -219,14 +196,14 @@
                             <li>700000 mmk</li>
                         </ul>
                         <div class="card-link">
-                            <a href="#" class="card-btn">
+                            <a href="./pages/Detail/detail5.html" class="card-btn">
                                 Details
                             </a>
                         </div>
                     </div>
                 </div>
             </article>
-
+            <!-- Dawei-Myeik -->
             <article class="card" id="card-6">
                 <div class="card-body">
                     <div class="img-container">
@@ -240,7 +217,7 @@
                             <li>800,000 mmk</li>
                         </ul>
                         <div class="card-link">
-                            <a href="#" class="card-btn">
+                            <a href="./pages/Detail/detail6.html" class="card-btn">
                                 Details
                             </a>
                         </div>
@@ -253,7 +230,7 @@
     <!-- AboutUs/Contact -->
   <main class="address-container">
         <article class="address">
-        <div class="about"id="AboutUs" >
+        <div class="about">
             <h2>About Us</h2>
             <p>
                 Just Travel Agency is a dedicated travel company that specializes in providing personalized and hassle-free travel experiences. Whether you're planning a relaxing vacation, an adventurous getaway, or a business trip, Just Travel Agency ensures that every detail is taken care of.Whether traveling solo or with a group, Just Travel Agency turns your travel dreams into reality.
@@ -261,7 +238,7 @@
         </div>
         </article>
         <article class="address">
-        <div class="contact" id="Contact">
+        <div class="contact">
             <h2>Contact</h2>
             <ul>
             <li><i class="fa-solid fa-envelope"></i><a href="mailto:justtravel@gmail.com"> justtravel@gmail.com</a></li>
@@ -281,7 +258,7 @@
             <p>&copy;2024 JustTravel. All Rights Reserved.</p>
         </div>
         <div class="privacy">
-            <a href="./privacy-policy.html">𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐏𝐨𝐥𝐢𝐜𝐲</a>
+            <a href="#">𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐏𝐨𝐥𝐢𝐜𝐲</a>
         </div>
     </footer>
     <script src="./assets/js/script.js"></script>
