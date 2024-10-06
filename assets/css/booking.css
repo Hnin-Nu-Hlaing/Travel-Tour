@@ -24,7 +24,7 @@ input, select {
     box-sizing: border-box;
 }
 button {
-    width: 100%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 10px;
