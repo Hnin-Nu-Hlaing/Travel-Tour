@@ -30,7 +30,8 @@
  - comments
  - used vanilla js
  - jQuery
- #### APP Creteria
+ 
+ #### APP Criteria
 
  - local Storage
 
