@@ -146,7 +146,7 @@ function showDetails(event) {
         <p><strong>Number of people:</strong> ${numPeople}</p>
         <p><strong>Cost per person:</strong> $${costPerPerson}</p>
         <p><strong>Total Cost:</strong> $${totalCost.toFixed(2)}</p>
-        <p><strong style="color: darkblue;">Thank you for your order! Your purchase has been successfully confirmed!</strong></p>
+        <p><strong style="color: darkblue;  font-size: large;">Thank you for your order!</strong></p>
         <div class="button-container">
         <button class="edit-button" onclick="editBooking()">Edit</button>
         <button class="ok-button" onclick="confirmBooking()">OK</button>
